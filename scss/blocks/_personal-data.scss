@@ -1,0 +1,144 @@
+.personal__title {
+  margin: 0;
+}
+
+option {
+  color: black;
+}
+
+.personal__info {
+  padding: 30px 90px 80px 55px;
+  margin-top: 5px;
+  // height: 425px;
+  width: 818px;
+  border-radius: 5px;
+  background-color: #f1f2f6ff;
+  margin-bottom: 30px;
+}
+
+.info__form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.form__label {
+  color: #17266e;
+  width: 318px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 15px;
+}
+
+.form__input {
+  border-radius: 2px;
+  border: none;
+  outline: none;
+  margin-top: 5px;
+  background-color: $color-white;
+  padding: 20px;
+  &::placeholder {
+    color: #b9bed3ff;
+    font-family: Space Grotesk;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+  }
+}
+.upload-img {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  text-decoration: underline;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 15px;
+  color: #526eff;
+
+  input {
+    display: none;
+  }
+}
+
+.form__avatar {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  background-image: url("../../img/Avatar.svg");
+  background-size: cover;
+  background-position: center center;
+  margin-bottom: 10px;
+
+  img {
+    border-radius: 50%;
+  }
+}
+
+.img-box {
+  margin-top: 30px;
+  height: 325px;
+  width: 666px;
+  background: #ffffff;
+}
+
+.about__label {
+  color: #17266e;
+  width: 318px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 15px;
+}
+.info__about {
+  display: flex;
+  flex-direction: column;
+}
+
+.about__input {
+  height: 56px;
+  width: 666px;
+  border-radius: 2px;
+  outline: none;
+  border: none;
+  padding: 21px;
+  margin-top: 5px;
+}
+
+.about__texterea {
+  resize: vertical;
+ width: 666px;
+ min-height: 150px;
+  border-radius: 2px;
+  padding: 20px;
+  outline: none;
+  border: none;
+  margin-top: 5px;
+}
+
+.btn-wraper {
+  display: flex;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 26px;
+}
+.cencel-btn {
+  padding: 15px 20px;
+  background: transparent;
+  border: 1px solid #526eff;
+  margin-right: 30px;
+  color: #526eff;
+  border-radius: 2px;
+}
+.ok-btn {
+  padding: 15px 20px;
+  border-radius: 2px;
+  border: none;
+  background: #526eff;
+  box-shadow: 0px 14px 54px 0px #526eff80;
+  color: #ffffff;
+}

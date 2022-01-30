@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="header__container container">
+      <nav class="header__nav nav">
+        <a href="#" class="nav__logo">
+          <img src="img/logo-site.svg" width="70" height="30" alt="logo">
+        </a>
+
+        <form class="nav__form" method="post">
+        <img src="./img/search-icon.svg" alt="" class="search-icon">
+          <input class="nav__input" type="search" placeholder=" | Qidiruv">
+        </form>
+
+        <a href="#" class="nav__link">Loyha haqimizda</a>
+        <a href="#" class="nav__link">Yordam</a>
+
+        <a href="#" class="nav__announce">Elon berish</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="main__container container">
+      <span class="sub-title">Bosh sahifa <b>| E’lon berish</b></span>
+
+      <!-- LEFT ASIDE SECTION -->
+
+      <aside class="left-aside">
+        <div class="main_filter filter">
+
+          <form class="filter__form">
+            <label class="filter__label" for="category">Sohangizini kiriting
+              <input type="date" name="date" id="date" class="filter__date">
+            </label>
+            <label class="filter__label label-time" for="category">Sohangizini kiriting
+              <input type="time" name="time" id="time" class="filter__time">
+            </label>
+            <label class="filter__label" for="category">Sohangizini kiriting
+              <select name="category" id="category" class="filter__category">
+                <option value="it">IT</option>
+                <option value="smm">SMM</option>
+              </select>
+            </label>
+            <label for="category" class="filter__label">Sohani yo’nalishini kiritng
+              <select name="direction" id="direction" class="filter__subcategory">
+                <option value="it">Frontend</option>
+                <option value="smm">Backend</option>
+              </select>
+            </label>
+            <label for="" class="filter__label">Tadbir turini tanlang
+              <div class="filter__tip">
+                <button class="tip__btn tip__btn--active">Online</button>
+                <button class="tip__btn">Offline</button>
+              </div>
+            </label>
+            <label class="filter__label" for="category">Online manzilni kiriting kiriting
+              <input type="text" id="url" placeholder="Link kiritng" class="filter__input">
+            </label>
+          </form>
+        </div>
+      </aside>
+
+      <!-- MAIN SECTION -->
+
+      <section class="personal-data personal">
+        <h2 class="personal__title">Shahsi malumotlar</h2>
+        <div class="personal__info">
+          <form class="info__form">
+            <label class="upload-img">
+              <input type="file" class="img-upload">
+              <span class="form__avatar">
+                <img src="" alt="" width="80" id="avatar">
+              </span>
+              Upload img
+            </label>
+            <div class="info__form">
+              <label class="form__label">Ism
+                <input type="text" class="form__input" placeholder="Ismingizni kiriting">
+              </label>
+              <label class="form__label">Kasb yoki mutahasislig
+                <input type="text" class="form__input" placeholder="Kasb yoki mutahasislig kirirting">
+              </label>
+              <label class="form__label">Telefon raqam
+                <input type="text" class="form__input" placeholder="telefon raqamingizni kiriting">
+              </label>
+              <label class="form__label">Email pochta
+                <input type="text" class="form__input" placeholder="Email pochta kiriting">
+              </label>
+            </div>
+
+          </form>
+        </div>
+
+        <h2 class="personal__title">E’lon haqida malumotlar</h2>
+        <div class="personal__info">
+          <form class="info__about about">
+
+            <label class="about__label">Matin sarlavhasi
+              <input type="text" class="about__input" placeholder="Mavzini kiriting">
+            </label>
+            <label class="about__label">Elon haqida qisqacha malumot
+              <input type="text" class="about__input" placeholder="Elon haqida qisqacha malumotni kiriting">
+            </label>
+
+            <div class="img-box">
+              <img src="" alt="">
+            </div>
+
+            <label class="about__label">Elon haqida batavsil malumot
+              <textarea name="texterea" id="texterea" cols="30" rows="10" class="about__texterea"
+                placeholder="Elon haqida batavsil malumotni kiriting"></textarea>
+
+            </label>
+
+          </form>
+        </div>
+        <div class="btn-wraper">
+          <button class="cencel-btn">Bekor qilish</button>
+          <button class="ok-btn">Tasdiqlash</button>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__container container">
+
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
