@@ -4,11 +4,12 @@
 }
 
 .left-aside {
-  max-height: 640px;
+  height: 642px;
+  width: 394px;
+  border-radius: 5px;
   display: flex;
   flex-direction: column;
-  padding: 35px 35px 0 35px;
+  padding: 36px 46px 56px 30px;
   border-radius: 5px;
-  border: 1px solid #526eff;
   background: #526eff;
 }

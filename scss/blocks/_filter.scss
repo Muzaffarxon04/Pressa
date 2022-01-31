@@ -3,14 +3,20 @@
   justify-content: space-between;
 }
 
+
 .sub-title {
-  top: 30px;
   position: absolute;
+  top: 30px;
+
+a{
+  text-decoration: none;
   color: rgba(0, 0, 0, 0.2);
+}
   b {
     color: #000;
   }
 }
+
 
 .filter__label {
   font-size: 12px;
@@ -21,8 +27,11 @@
   flex-direction: column;
 }
 
+
+
 .filter__date,
 .filter__time {
+  width: 318px;
   color: $color-white;
   font-weight: 300;
   font-size: 18px;
@@ -86,21 +95,23 @@
   }
 }
 
+
 .filter__tip {
-  width: 104%;
+  width: 100%;
   display: flex;
   align-items: center;
+  background: rgba(255, 255, 255, 0.1);
   border-radius: 2px;
   padding: 2px;
 }
 
 .tip__btn {
-  width: 48%;
-  border-radius: 2px;
+  width: 50%;
   margin: 0;
   padding: 15px 40px;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0);
   border: none;
+  border-radius: 2px;
   color: $color-white;
   font-weight: 300;
   font-size: 18px;
@@ -117,7 +128,7 @@
     padding: 15px 0;
     text-align: center;
   }
-}
+
 
 @include breakpoint-down(1150px) {
   .filter__date {
@@ -157,4 +168,5 @@
     width: 80%;
     margin: 0;
   }
+}
 }

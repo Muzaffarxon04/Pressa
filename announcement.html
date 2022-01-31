@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Pressa</title>
   <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -20,7 +20,7 @@
 
         <form class="nav__form" method="post">
         <img src="./img/search-icon.svg" alt="" class="search-icon">
-          <input class="nav__input" type="search" placeholder=" | Qidiruv">
+          <input class="nav__input" type="search" placeholder=" | Qidiruv" disabled>
         </form>
 
         <a href="#" class="nav__link">Loyha haqimizda</a>
@@ -33,18 +33,18 @@
 
   <main class="main">
     <div class="main__container container">
-      <span class="sub-title">Bosh sahifa <b>| E’lon berish</b></span>
+      <span class="sub-title"><a href="#" class="sub-link">Bosh sahifa </a><b>| E’lon berish</b></span>
 
       <!-- LEFT ASIDE SECTION -->
 
-      <aside class="left-aside">
+      <aside class="left-aside" id="aside">
         <div class="main_filter filter">
 
           <form class="filter__form">
-            <label class="filter__label" for="category">Sohangizini kiriting
+            <label class="filter__label" for="category">Bo’lib o’tadigan sanani kiriting
               <input type="date" name="date" id="date" class="filter__date">
             </label>
-            <label class="filter__label label-time" for="category">Sohangizini kiriting
+            <label class="filter__label" for="category">Bo’lib o’tadigan soatni  kiriting
               <input type="time" name="time" id="time" class="filter__time">
             </label>
             <label class="filter__label" for="category">Sohangizini kiriting
@@ -66,7 +66,7 @@
               </div>
             </label>
             <label class="filter__label" for="category">Online manzilni kiriting kiriting
-              <input type="text" id="url" placeholder="Link kiritng" class="filter__input">
+              <input type="text" id="url" placeholder="Link kiritng" class="filter__input" autocomplete="off">
             </label>
           </form>
         </div>
@@ -81,7 +81,7 @@
             <label class="upload-img">
               <input type="file" class="img-upload">
               <span class="form__avatar">
-                <img src="" alt="" width="80" id="avatar">
+                <img src="#" alt="" width="80" id="avatar">
               </span>
               Upload img
             </label>
@@ -114,9 +114,11 @@
               <input type="text" class="about__input" placeholder="Elon haqida qisqacha malumotni kiriting">
             </label>
 
-            <div class="img-box">
-              <img src="" alt="">
-            </div>
+            <label class="img-box">
+              <img src="#" alt="">
+              <input type="file" name="" class="img-upload" id="img-upload">
+              <h2 class="img-box__title">Upload img</h2>
+            </label>
 
             <label class="about__label">Elon haqida batavsil malumot
               <textarea name="texterea" id="texterea" cols="30" rows="10" class="about__texterea"

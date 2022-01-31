@@ -390,8 +390,8 @@ html {
 *,
 *::before,
 *::after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -602,7 +602,9 @@ img {
 }
 
 .left-aside {
-  max-height: 640px;
+  height: 642px;
+  width: 394px;
+  border-radius: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -610,9 +612,8 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 35px 35px 0 35px;
+  padding: 36px 46px 56px 30px;
   border-radius: 5px;
-  border: 1px solid #526eff;
   background: #526eff;
 }
 
@@ -626,8 +627,12 @@ img {
 }
 
 .sub-title {
-  top: 30px;
   position: absolute;
+  top: 30px;
+}
+
+.sub-title a {
+  text-decoration: none;
   color: rgba(0, 0, 0, 0.2);
 }
 
@@ -651,6 +656,7 @@ img {
 
 .filter__date,
 .filter__time {
+  width: 318px;
   color: #fff;
   font-weight: 300;
   font-size: 18px;
@@ -732,24 +738,25 @@ img {
 }
 
 .filter__tip {
-  width: 104%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background: rgba(255, 255, 255, 0.1);
   border-radius: 2px;
   padding: 2px;
 }
 
 .tip__btn {
-  width: 48%;
-  border-radius: 2px;
+  width: 50%;
   margin: 0;
   padding: 15px 40px;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0);
   border: none;
+  border-radius: 2px;
   color: #fff;
   font-weight: 300;
   font-size: 18px;
@@ -768,7 +775,7 @@ img {
   }
 }
 
-@media only screen and (max-width: 1150px) {
+@media only screen and (max-width: 1200px) and (max-width: 1150px) {
   .filter__date {
     width: 25.2%;
   }
@@ -777,7 +784,7 @@ img {
   }
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1200px) and (max-width: 900px) {
   .filter__form {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -797,7 +804,7 @@ img {
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1200px) and (max-width: 600px) {
   .filter__form {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -823,9 +830,9 @@ option {
 }
 
 .personal__info {
-  padding: 30px 90px 80px 55px;
+  padding: 30px 74px 80px 55px;
   margin-top: 5px;
-  width: 818px;
+  width: 795px;
   border-radius: 5px;
   background-color: #f1f2f6ff;
   margin-bottom: 30px;
@@ -915,7 +922,7 @@ option {
   color: #526eff;
 }
 
-.upload-img input {
+.img-upload {
   display: none;
 }
 
@@ -940,6 +947,21 @@ option {
   height: 325px;
   width: 666px;
   background: #ffffff;
+}
+
+.img-box__title {
+  font-size: 40px;
+  text-align: center;
+  line-height: 51px;
+  color: #17266E33;
+  font-weight: 400;
+  -webkit-transform: translateY(81px);
+          transform: translateY(81px);
+}
+
+.img-box__title:hover {
+  color: #526eff;
+  text-decoration: underline;
 }
 
 .about__label {
