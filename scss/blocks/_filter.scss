@@ -3,24 +3,22 @@
   justify-content: space-between;
 }
 
-
 .sub-title {
   position: absolute;
   top: 30px;
-
-a{
-  text-decoration: none;
-  color: rgba(0, 0, 0, 0.2);
-}
+  
+  a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.2);
+  }
   b {
     color: #000;
   }
 }
 
-.sub{
+.sub {
   top: 85px;
 }
-
 
 .filter__label {
   font-size: 12px;
@@ -30,8 +28,6 @@ a{
   display: flex;
   flex-direction: column;
 }
-
-
 
 .filter__date,
 .filter__time {
@@ -99,7 +95,6 @@ a{
   }
 }
 
-
 .filter__tip {
   width: 100%;
   display: flex;
@@ -127,96 +122,17 @@ a{
   color: $color-light-blue;
 }
 
-@include breakpoint-down(1200px) {
-  .tip__btn {
-    padding: 15px 0;
-    text-align: center;
-  }
 
-
-@include breakpoint-down(1100px) {
-  .filter__label {
-    width: 100px;
-    font-size: 12px;
-    line-height: 15px;
-    color: rgba(255, 255, 255, 1);
-    padding-bottom: 18px;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  
-  .filter__subcategory,
-  .filter__category,
-  .filter__date,
-  .filter__input,
-  .filter__time {
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 23px;
-    margin-top: 4px;
-    border-radius: 2px;
-    background-color: rgba(255, 255, 255, 0.1);
-    color: $color-white;
-    padding: 15px;
-    outline: none;
-    border: none;
-  }
-
-  .filter__date {
-    width: 25.2%;
-  }
-
-  .filter__tip {
-    width: 22%;
-  }
-}
-
-@include breakpoint-down(900px) {
-  .container{
-    width: 680px;
-    display: flex;
-    flex-direction: column;
-  }
- 
-}
-
-@include breakpoint-down(600px) {
-  .filter__form {
-    width: 100%;
-    box-sizing: border-box;
+.input-wrapper{
   flex-direction: column;
 
-  .input-wrapper{
-width: 622px;
-border-radius: 2px;
-display: flex;
-justify-content: space-between;
-
-.filter__label {
-  flex-direction: column;
-  height: 56px;
-  border-radius: 2px;
-
-}
+  .filter__label{
+    margin-right: 20px;
   }
+  
 
+  input, select{
+    width: 296px;
   }
-
-  .filter__tip {
-    position: absolute;
-    left: 10%;
-    right: 10%;
-    top: calc(100% - 70px);
-    width: 80%;
-    margin: 0;
-  }
-
-  .filter__input{
-    position: relative;
-    left: 0;
-width: 622px;
-border-radius: 2px;
-  }
-}
+  
 }

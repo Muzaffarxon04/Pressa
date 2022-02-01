@@ -736,6 +736,34 @@ img {
   background-color: #526eff;
 }
 
+@media only screen and (max-width: 744px) {
+  .main__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .left-aside {
+    height: 450px;
+    width: 683px;
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .main__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .left-aside {
+    height: 625px;
+    width: 346px;
+    margin-bottom: 30px;
+  }
+}
+
 .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -891,107 +919,19 @@ img {
   color: #526EFF;
 }
 
-@media only screen and (max-width: 1200px) {
-  .tip__btn {
-    padding: 15px 0;
-    text-align: center;
-  }
+.input-wrapper {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-@media only screen and (max-width: 1200px) and (max-width: 1100px) {
-  .filter__label {
-    width: 100px;
-    font-size: 12px;
-    line-height: 15px;
-    color: white;
-    padding-bottom: 18px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .filter__subcategory,
-  .filter__category,
-  .filter__date,
-  .filter__input,
-  .filter__time {
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 23px;
-    margin-top: 4px;
-    border-radius: 2px;
-    background-color: rgba(255, 255, 255, 0.1);
-    color: #fff;
-    padding: 15px;
-    outline: none;
-    border: none;
-  }
-  .filter__date {
-    width: 25.2%;
-  }
-  .filter__tip {
-    width: 22%;
-  }
+.input-wrapper .filter__label {
+  margin-right: 20px;
 }
 
-@media only screen and (max-width: 1200px) and (max-width: 900px) {
-  .container {
-    width: 680px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
-
-@media only screen and (max-width: 1200px) and (max-width: 600px) {
-  .filter__form {
-    width: 100%;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .filter__form .input-wrapper {
-    width: 622px;
-    border-radius: 2px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .filter__form .input-wrapper .filter__label {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    height: 56px;
-    border-radius: 2px;
-  }
-  .filter__tip {
-    position: absolute;
-    left: 10%;
-    right: 10%;
-    top: calc(100% - 70px);
-    width: 80%;
-    margin: 0;
-  }
-  .filter__input {
-    position: relative;
-    left: 0;
-    width: 622px;
-    border-radius: 2px;
-  }
+.input-wrapper input, .input-wrapper select {
+  width: 296px;
 }
 
 .personal__title {
@@ -1183,6 +1123,7 @@ option {
   outline: none;
   border: none;
   margin-top: 5px;
+  background-color: #ffffff;
 }
 
 .btn-wraper {
@@ -1255,18 +1196,37 @@ option {
           transform: translateX(230%);
 }
 
-@media only screen and (max-width: 600px) {
-  .container {
-    width: 700px;
-  }
+@media only screen and (max-width: 744px) {
   .personal__info {
-    height: 372px;
-    width: 684px;
-    border-radius: 5px;
+    padding: 36px 17px 39px 20px;
+    width: 683px;
   }
-  .form__label {
-    height: 372px;
-    width: 684px;
+  .input-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .input-wrapper .filter__label {
+    margin-right: 20px;
+  }
+  .input-wrapper input, .input-wrapper select {
+    width: 296px;
+  }
+  .about__texterea, .about__input, .img-box {
+    width: 640px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .personal__info {
+    padding: 36px 17px 39px 20px;
+    width: 344px;
+  }
+  .filter__label {
+    width: 300px;
+  }
+  .about__texterea, .about__input, .img-box {
+    width: 299px;
   }
 }
 

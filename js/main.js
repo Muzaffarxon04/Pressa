@@ -15,9 +15,9 @@ elBtns.forEach(btn => {
   btn.addEventListener('click', evt => {
     elBtns[0].classList.remove('tip__btn--active')
     elBtns[1].classList.remove('tip__btn--active')
-    
+
     btn.classList.toggle('tip__btn--active')
-    
+
     console.log(evt.target);
   })
 })

@@ -13,3 +13,33 @@
   border-radius: 5px;
   background-color: #526eff;
 }
+
+
+
+@include breakpoint-down(744px) {
+
+  .main__container{
+    flex-direction: column;
+  }
+
+  .left-aside {
+   height: 450px;
+    width: 683px;
+margin-bottom: 30px;
+  }
+}
+
+
+
+@include breakpoint-down(375px) {
+
+  .main__container{
+    flex-direction: column;
+  }
+
+  .left-aside {
+    height: 625px;
+    width: 346px;    
+margin-bottom: 30px;
+  }
+}

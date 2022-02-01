@@ -138,6 +138,7 @@ transform: translateY(81px);
   outline: none;
   border: none;
   margin-top: 5px;
+  background-color: #ffffff;
 }
 
 .btn-wraper {
@@ -202,21 +203,53 @@ transform: translateX(230%);
 
 
 
-@include breakpoint-down(600px){
-  .container{
-    width: 700px;
-  }
+@include breakpoint-down(744px) {
+
   .personal__info{
-    height: 372px;
-width: 684px;
-border-radius: 5px;
-
+    padding: 36px 17px 39px 20px;
+    width: 683px;
   }
 
-  .form__label{
-    height: 372px;
-    width: 684px;
+
+
+.input-wrapper{
+  display: flex;
+
+  .filter__label{
+    margin-right: 20px;
+  }
   
-    
+
+  input, select{
+    width: 296px;
   }
+  
+}
+
+.about__texterea, .about__input, .img-box{
+  width: 640px;
+}
+
+}
+
+
+
+
+@include breakpoint-down(375px) {
+
+  .personal__info{
+    padding: 36px 17px 39px 20px;
+width: 344px;
+  }
+
+
+  .filter__label{
+   width: 300px;
+  }
+
+
+.about__texterea, .about__input, .img-box{
+  width: 299px;
+}
+
 }
