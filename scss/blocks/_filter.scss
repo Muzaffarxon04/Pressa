@@ -17,6 +17,10 @@ a{
   }
 }
 
+.sub{
+  top: 85px;
+}
+
 
 .filter__label {
   font-size: 12px;
@@ -174,37 +178,29 @@ a{
     display: flex;
     flex-direction: column;
   }
-  .filter__label {
-    height: 382px;
-    width: 683px;    
-   
-    border-radius: 5px;   
-    font-size: 12px;
-    line-height: 15px;
-    color: rgba(255, 255, 255, 1);
-    padding-bottom: 18px;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .filter__form {
-    background-color: red;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    height: 156px !important;
-  }
-
-  .filter__date,
-  .filter__tip {
-    width: 48%;
-    margin: 10px 0;
-  }
+ 
 }
 
 @include breakpoint-down(600px) {
   .filter__form {
-    flex-direction: row;
+    width: 100%;
+    box-sizing: border-box;
+  flex-direction: column;
+
+  .input-wrapper{
+width: 622px;
+border-radius: 2px;
+display: flex;
+justify-content: space-between;
+
+.filter__label {
+  flex-direction: column;
+  height: 56px;
+  border-radius: 2px;
+
+}
+  }
+
   }
 
   .filter__tip {
@@ -214,6 +210,13 @@ a{
     top: calc(100% - 70px);
     width: 80%;
     margin: 0;
+  }
+
+  .filter__input{
+    position: relative;
+    left: 0;
+width: 622px;
+border-radius: 2px;
   }
 }
 }

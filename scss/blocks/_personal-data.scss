@@ -164,6 +164,7 @@ transform: translateY(81px);
 }
 
 .about__modal{
+  // display: none;
   position: fixed;
 justify-content: center;
   z-index: 10;
@@ -197,4 +198,25 @@ line-height: 26px;
 color: #FFFFFF;
 transform: translateX(230%);
 
+}
+
+
+
+@include breakpoint-down(600px){
+  .container{
+    width: 700px;
+  }
+  .personal__info{
+    height: 372px;
+width: 684px;
+border-radius: 5px;
+
+  }
+
+  .form__label{
+    height: 372px;
+    width: 684px;
+  
+    
+  }
 }
