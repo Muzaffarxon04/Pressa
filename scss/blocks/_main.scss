@@ -1,6 +1,7 @@
 .main {
   padding: 80px 0;
   position: relative;
+  display: flex;
 }
 
 .left-aside {
@@ -12,4 +13,62 @@
   padding: 36px 46px 56px 30px;
   border-radius: 5px;
   background: #526eff;
+}
+
+@include breakpoint-down(900px) {
+  .main {
+    height: 382px;
+width: 683px;
+border-radius: 5px;
+margin: 0 auto;
+    padding: 80px 0;
+    position: relative;
+    display: flex;
+  }
+  
+  .left-aside{
+   width: 680px;
+  }
+
+  .filter__label {
+    width: 394px;
+    border-radius: 5px;   
+    font-size: 12px;
+    line-height: 15px;
+    // color: rgba(255, 255, 255, 1);
+    padding-bottom: 18px;
+    display: flex;
+    flex-direction: column;
+    input{
+      width: 50px;
+    }
+  }
+
+  .filter__form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 156px !important;
+  }
+
+  .filter__date,
+  .filter__tip {
+    width: 48%;
+    margin: 10px 0;
+  }
+}
+
+@include breakpoint-down(600px) {
+  .filter__form {
+    flex-direction: row;
+  }
+
+  .filter__tip {
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    top: calc(100% - 70px);
+    width: 80%;
+    margin: 0;
+  }
 }

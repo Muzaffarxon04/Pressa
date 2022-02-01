@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pressa</title>
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/main.min.css">
 </head>
 
 <body>
@@ -38,34 +38,34 @@
       <!-- LEFT ASIDE SECTION -->
 
       <aside class="left-aside" id="aside">
-        <div class="main_filter filter">
+        <div class="main__filter filter">
 
           <form class="filter__form">
-            <label class="filter__label" for="category">Bo’lib o’tadigan sanani kiriting
+            <label class="filter__label">Bo’lib o’tadigan sanani kiriting
               <input type="date" name="date" id="date" class="filter__date">
             </label>
-            <label class="filter__label" for="category">Bo’lib o’tadigan soatni  kiriting
+            <label class="filter__label">Bo’lib o’tadigan soatni  kiriting
               <input type="time" name="time" id="time" class="filter__time">
             </label>
-            <label class="filter__label" for="category">Sohangizini kiriting
+            <label class="filter__label">Sohangizini kiriting
               <select name="category" id="category" class="filter__category">
                 <option value="it">IT</option>
                 <option value="smm">SMM</option>
               </select>
             </label>
-            <label for="category" class="filter__label">Sohani yo’nalishini kiritng
+            <label class="filter__label">Sohani yo’nalishini kiritng
               <select name="direction" id="direction" class="filter__subcategory">
                 <option value="it">Frontend</option>
                 <option value="smm">Backend</option>
               </select>
             </label>
-            <label for="" class="filter__label">Tadbir turini tanlang
-              <div class="filter__tip">
+            <div class="filter__label">Tadbir turini tanlang
+              <div class="filter__tip tip">
                 <button class="tip__btn tip__btn--active">Online</button>
                 <button class="tip__btn">Offline</button>
               </div>
-            </label>
-            <label class="filter__label" for="category">Online manzilni kiriting kiriting
+            </div>
+            <label class="filter__label">Online manzilni kiriting kiriting
               <input type="text" id="url" placeholder="Link kiritng" class="filter__input" autocomplete="off">
             </label>
           </form>
@@ -73,11 +73,17 @@
       </aside>
 
       <!-- MAIN SECTION -->
-
+      
       <section class="personal-data personal">
+
+        <div class="about__modal d-none" id="modal">
+          <h2 class="modal__title">Sorovingiz qabul qilindi E’loningiz  uchun 
+           Rahmat Bizni kuzatib boring</h2>
+          <button class="modal__btn">ok</button>
+         </div>
         <h2 class="personal__title">Shahsi malumotlar</h2>
-        <div class="personal__info">
-          <form class="info__form">
+        <div class="personal__info info">
+          <form class="info__forma">
             <label class="upload-img">
               <input type="file" class="img-upload">
               <span class="form__avatar">
@@ -114,12 +120,14 @@
               <input type="text" class="about__input" placeholder="Elon haqida qisqacha malumotni kiriting">
             </label>
 
-            <label class="img-box">
-              <img src="#" alt="">
-              <input type="file" name="" class="img-upload" id="img-upload">
+            <label for="img-upload">
+              <div id="mg-upload" class="img-box"> 
+              <input type="file" name="uploading" class="img-upload" id="img-upload">
               <h2 class="img-box__title">Upload img</h2>
+                <img src="#" alt="">
+  
+              </div>
             </label>
-
             <label class="about__label">Elon haqida batavsil malumot
               <textarea name="texterea" id="texterea" cols="30" rows="10" class="about__texterea"
                 placeholder="Elon haqida batavsil malumotni kiriting"></textarea>
@@ -130,7 +138,7 @@
         </div>
         <div class="btn-wraper">
           <button class="cencel-btn">Bekor qilish</button>
-          <button class="ok-btn">Tasdiqlash</button>
+          <button class="ok-btn" id="confirm">Tasdiqlash</button>
         </div>
       </section>
 

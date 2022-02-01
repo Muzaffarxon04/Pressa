@@ -130,7 +130,35 @@ a{
   }
 
 
-@include breakpoint-down(1150px) {
+@include breakpoint-down(1100px) {
+  .filter__label {
+    width: 100px;
+    font-size: 12px;
+    line-height: 15px;
+    color: rgba(255, 255, 255, 1);
+    padding-bottom: 18px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  
+  .filter__subcategory,
+  .filter__category,
+  .filter__date,
+  .filter__input,
+  .filter__time {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 23px;
+    margin-top: 4px;
+    border-radius: 2px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: $color-white;
+    padding: 15px;
+    outline: none;
+    border: none;
+  }
+
   .filter__date {
     width: 25.2%;
   }
@@ -141,7 +169,26 @@ a{
 }
 
 @include breakpoint-down(900px) {
+  .container{
+    width: 680px;
+    display: flex;
+    flex-direction: column;
+  }
+  .filter__label {
+    height: 382px;
+    width: 683px;    
+   
+    border-radius: 5px;   
+    font-size: 12px;
+    line-height: 15px;
+    color: rgba(255, 255, 255, 1);
+    padding-bottom: 18px;
+    display: flex;
+    flex-direction: column;
+  }
+
   .filter__form {
+    background-color: red;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;

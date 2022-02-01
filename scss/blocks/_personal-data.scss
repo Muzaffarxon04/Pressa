@@ -6,6 +6,9 @@ option {
   color: black;
 }
 
+
+
+
 .personal__info {
   padding: 30px 74px 80px 55px;
   margin-top: 5px;
@@ -48,6 +51,7 @@ option {
   }
 }
 .upload-img {
+  width: 80px;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -56,7 +60,6 @@ option {
   font-weight: 500;
   line-height: 15px;
   color: #526eff;
-
 }
 
 .img-upload {
@@ -158,4 +161,40 @@ transform: translateY(81px);
   background: #526eff;
   box-shadow: 0px 14px 54px 0px #526eff80;
   color: #ffffff;
+}
+
+.about__modal{
+  position: fixed;
+justify-content: center;
+  z-index: 10;
+  padding: 46px 33px 33px 33px;
+  height: 231px;
+  border-radius: 2px;
+background: #FFFFFF;
+flex-direction: column;
+}
+
+.modal__title{
+  width: 479px;
+font-size: 24px;
+font-weight: 700;
+line-height: 31px;
+text-align: center;
+margin: 0 auto;
+}
+
+.modal__btn{
+  background: #526EFF;
+  box-shadow: 0px 14px 54px 0px #526EFF80;
+  margin-top: 34px;
+  padding: 13px;
+  width: 90px;
+  border-radius: 2px;
+  border: none;
+font-size: 17px;
+font-weight: 500;
+line-height: 26px;
+color: #FFFFFF;
+transform: translateX(230%);
+
 }
