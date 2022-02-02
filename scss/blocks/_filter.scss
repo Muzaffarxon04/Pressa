@@ -20,7 +20,7 @@
   top: 85px;
 }
 
-.filter__label {
+.filter__label {width: 100px;
   font-size: 12px;
   line-height: 15px;
   color: rgba(255, 255, 255, 1);
@@ -78,6 +78,7 @@
 .filter__date,
 .filter__input,
 .filter__time {
+  width: 100%;
   font-size: 18px;
   font-weight: 500;
   line-height: 23px;
@@ -123,16 +124,66 @@
 }
 
 
-.input-wrapper{
-  flex-direction: column;
 
   .filter__label{
+  width: 100%;    
+    box-sizing: border-box;
     margin-right: 20px;
   }
   
 
-  input, select{
-    width: 296px;
+
+
+
+
+@include breakpoint-down(900px) {
+  .input-wrapper {
+    display: flex;
+justify-content: space-between;
+width: 102%;
   }
-  
+
+}
+
+
+
+@include breakpoint-down(744px) {
+  .input-wrapper {
+    .filter__label {
+      margin-right: 17px;
+    }
+
+    input,
+    select {
+      width: 100%;
+    }
+  }
+}
+
+@include breakpoint-down(520px) {
+
+  .input-wrapper {
+    flex-direction: column;
+input{
+  margin-right: 40px;
+
+}
+  }
+  .filter__label {
+    width: 100%;
+
+  }
+
+}
+
+@include breakpoint-down(370px) {
+
+  .input-wrapper {
+    flex-direction: column;
+
+  }
+  .filter__label {
+    width: 300px;
+  }
+
 }

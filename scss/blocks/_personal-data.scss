@@ -6,14 +6,10 @@ option {
   color: black;
 }
 
-
-
-
 .personal__info {
-  padding: 30px 74px 80px 55px;
+  padding: 30px 54px 40px 55px;
   margin-top: 5px;
-  // height: 425px;
-  width: 795px;
+  width: 100%;
   border-radius: 5px;
   background-color: #f1f2f6ff;
   margin-bottom: 30px;
@@ -21,9 +17,10 @@ option {
 
 .info__form {
   display: flex;
-  flex-wrap: wrap;
+  // flex-wrap: wrap;
   justify-content: space-between;
 }
+
 .form__label {
   color: #17266e;
   width: 318px;
@@ -66,7 +63,6 @@ option {
   display: none;
 }
 
-
 .form__avatar {
   height: 80px;
   width: 80px;
@@ -87,21 +83,20 @@ option {
   height: 325px;
   width: 666px;
   background: #ffffff;
-
 }
 
-.img-box__title{
-font-size: 40px;
-text-align: center;
-line-height: 51px;
-color: #17266E33;
-font-weight: 400;
-transform: translateY(81px);
+.img-box__title {
+  font-size: 40px;
+  text-align: center;
+  line-height: 51px;
+  color: #17266e33;
+  font-weight: 400;
+  transform: translateY(81px);
 
-&:hover{
-  color: #526eff;
-  text-decoration: underline;
-}
+  &:hover {
+    color: #526eff;
+    text-decoration: underline;
+  }
 }
 
 .about__label {
@@ -131,8 +126,8 @@ transform: translateY(81px);
 
 .about__texterea {
   resize: vertical;
- width: 666px;
- min-height: 150px;
+  width: 666px;
+  min-height: 150px;
   border-radius: 2px;
   padding: 20px;
   outline: none;
@@ -164,92 +159,143 @@ transform: translateY(81px);
   color: #ffffff;
 }
 
-.about__modal{
+.about__modal {
   // display: none;
   position: fixed;
-justify-content: center;
+  justify-content: center;
   z-index: 10;
   padding: 46px 33px 33px 33px;
   height: 231px;
   border-radius: 2px;
-background: #FFFFFF;
-flex-direction: column;
+  background: #ffffff;
+  flex-direction: column;
 }
 
-.modal__title{
+.modal__title {
   width: 479px;
-font-size: 24px;
-font-weight: 700;
-line-height: 31px;
-text-align: center;
-margin: 0 auto;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 31px;
+  text-align: center;
+  margin: 0 auto;
 }
 
-.modal__btn{
-  background: #526EFF;
-  box-shadow: 0px 14px 54px 0px #526EFF80;
+.modal__btn {
+  background: #526eff;
+  box-shadow: 0px 14px 54px 0px #526eff80;
   margin-top: 34px;
   padding: 13px;
   width: 90px;
   border-radius: 2px;
   border: none;
-font-size: 17px;
-font-weight: 500;
-line-height: 26px;
-color: #FFFFFF;
-transform: translateX(230%);
-
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 26px;
+  color: #ffffff;
+  transform: translateX(230%);
 }
 
+@include breakpoint-down(940px) {
+  .personal__info {
 
+    width: 500px;
+  }
+
+  .info__form {
+    flex-direction: column;
+    // width: 100%;
+
+    .form__label {
+      width: 100%;
+    }
+
+
+  }
+
+  .about__input,
+  .about__label,
+  .about__texterea{
+    width: 100%;
+  }
+  
+  .img-box{
+    width: 100%;
+  }
+}
+
+@include breakpoint-down(900px) {
+  .personal__info {
+    width: 100%;
+    padding: 36px 20px;
+
+   .input-wrapper{
+    input{
+      width: 92%;
+    }
+  }
+  }
+
+  .info__form {
+    flex-direction: column;
+    width: 100%;
+
+    .form__label {
+      width: 100%;
+    }
+    
+  }
+  .about__input,
+  .about__label,
+  .about__texterea{
+    width: 100%;
+  }
+  
+  .img-box{
+    width: 100%;
+  }
+
+}
 
 @include breakpoint-down(744px) {
-
-  .personal__info{
+  .personal__info {
     padding: 36px 17px 39px 20px;
     width: 683px;
-  }
-
-
-
-.input-wrapper{
-  display: flex;
-
-  .filter__label{
-    margin-right: 20px;
-  }
   
-
-  input, select{
-    width: 296px;
   }
-  
+
+  .about__texterea,
+  .about__input,
+  .img-box {
+    width: 640px;
+  }
 }
 
-.about__texterea, .about__input, .img-box{
-  width: 640px;
+@include breakpoint-down(520px) {
+  .personal__info {
+    width: 100%;
+    input{
+    width: 100%;
+    }
+  }
+  .form__label, .about__label, .about__texterea {
+    width: 100%;
+  }
+ 
+
+  .img-box{
+    width: 100%;
+  }
 }
 
-}
-
-
-
-
-@include breakpoint-down(375px) {
-
-  .personal__info{
+@include breakpoint-down(370px) {
+  .personal__info {
     padding: 36px 17px 39px 20px;
-width: 344px;
+    width: 344px;
   }
 
-
-  .filter__label{
-   width: 300px;
+  .about__texterea,
+  .about__input,
+  .img-box {
+    width: 299px;
   }
-
-
-.about__texterea, .about__input, .img-box{
-  width: 299px;
-}
-
 }

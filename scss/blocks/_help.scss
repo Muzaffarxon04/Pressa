@@ -7,7 +7,8 @@
   margin: 150px 0;
 }
 
-.help-left, .help-right {
+.help-left,
+.help-right {
   width: 48%;
   height: 360px;
   padding: 50px;
@@ -24,7 +25,8 @@
   background-color: $color-red;
 }
 
-.help-left__heading, .help-right__heading {
+.help-left__heading,
+.help-right__heading {
   width: 80%;
   margin: 0;
   margin-bottom: 10px;
@@ -34,7 +36,8 @@
   color: $color-white;
 }
 
-.help-left__text, .help-right__text {
+.help-left__text,
+.help-right__text {
   width: 70%;
   margin: 0;
   font-size: 14px;
@@ -42,7 +45,8 @@
   color: rgba(255, 255, 255, 0.6);
 }
 
-.help-left__btn, .help-right__btn {
+.help-left__btn,
+.help-right__btn {
   margin-top: 40px;
   padding: 8px 20px;
   background: rgba(255, 255, 255, 0.1);
@@ -52,7 +56,8 @@
   color: $color-white;
 }
 
-.help-left__img-box, .help-right__img-box {
+.help-left__img-box,
+.help-right__img-box {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -112,7 +117,6 @@
 }
 
 .help-left:hover {
-
   .help-left__img1 {
     right: 160px;
   }
@@ -193,9 +197,7 @@
   z-index: -1;
 }
 
-
 .help-right:hover {
-
   .help-right__img1 {
     left: 40%;
   }
@@ -229,9 +231,9 @@
   }
 }
 
-
 @include breakpoint-down(1000px) {
-  .help-left, .help-right {
+  .help-left,
+  .help-right {
     width: 70%;
     margin: 15px auto;
   }
