@@ -20,7 +20,8 @@
   top: 85px;
 }
 
-.filter__label {width: 100px;
+.filter__label {
+  width: 100px;
   font-size: 12px;
   line-height: 15px;
   color: rgba(255, 255, 255, 1);
@@ -123,36 +124,26 @@
   color: $color-light-blue;
 }
 
-
-
-  .filter__label{
-  width: 100%;    
-    box-sizing: border-box;
-    margin-right: 20px;
-  }
-  
-
-
-
-
+.filter__label {
+  width: 100%;
+  box-sizing: border-box;
+  margin-right: 20px;
+}
 
 @include breakpoint-down(900px) {
   .input-wrapper {
     display: flex;
-justify-content: space-between;
-width: 102%;
+    justify-content: space-between;
+    width: 102%;
   }
-
 }
-
-
 
 @include breakpoint-down(744px) {
   .input-wrapper {
     .filter__label {
       margin-right: 17px;
     }
-
+    
     input,
     select {
       width: 100%;
@@ -161,29 +152,22 @@ width: 102%;
 }
 
 @include breakpoint-down(520px) {
-
   .input-wrapper {
     flex-direction: column;
-input{
-  margin-right: 40px;
-
-}
+    input {
+      margin-right: 40px;
+    }
   }
   .filter__label {
     width: 100%;
-
   }
-
 }
 
 @include breakpoint-down(370px) {
-
   .input-wrapper {
     flex-direction: column;
-
   }
   .filter__label {
     width: 300px;
   }
-
 }

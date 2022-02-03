@@ -197,7 +197,6 @@ option {
 
 @include breakpoint-down(940px) {
   .personal__info {
-
     width: 500px;
   }
 
@@ -208,17 +207,15 @@ option {
     .form__label {
       width: 100%;
     }
-
-
   }
 
   .about__input,
   .about__label,
-  .about__texterea{
+  .about__texterea {
     width: 100%;
   }
-  
-  .img-box{
+
+  .img-box {
     width: 100%;
   }
 }
@@ -228,11 +225,11 @@ option {
     width: 100%;
     padding: 36px 20px;
 
-   .input-wrapper{
-    input{
-      width: 92%;
+    .input-wrapper {
+      input {
+        width: 92%;
+      }
     }
-  }
   }
 
   .info__form {
@@ -242,25 +239,22 @@ option {
     .form__label {
       width: 100%;
     }
-    
   }
   .about__input,
   .about__label,
-  .about__texterea{
-    width: 100%;
-  }
-  
-  .img-box{
+  .about__texterea {
     width: 100%;
   }
 
+  .img-box {
+    width: 100%;
+  }
 }
 
 @include breakpoint-down(744px) {
   .personal__info {
     padding: 36px 17px 39px 20px;
     width: 683px;
-  
   }
 
   .about__texterea,
@@ -273,16 +267,17 @@ option {
 @include breakpoint-down(520px) {
   .personal__info {
     width: 100%;
-    input{
-    width: 100%;
+    input {
+      width: 100%;
     }
   }
-  .form__label, .about__label, .about__texterea {
+  .form__label,
+  .about__label,
+  .about__texterea {
     width: 100%;
   }
- 
 
-  .img-box{
+  .img-box {
     width: 100%;
   }
 }
