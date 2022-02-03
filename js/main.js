@@ -1,6 +1,16 @@
 const elBtns = document.querySelectorAll('.tip__btn')
 let Elurl = document.querySelector('.filter__input')
+let onlinebtn = document.getElementById('#online')
+let oflineBtn = document.getElementById('#ofline')
 
+
+// onlinebtn.addEventListener('click', () => {
+//   console.log('online');
+// })
+
+// oflineBtn.addEventListener('click', () => {
+//   console.log('ofline');
+// })
 
 Elurl.addEventListener('keyup', (e) => {
   if (!e.target.value) {
@@ -18,7 +28,11 @@ elBtns.forEach(btn => {
 
     btn.classList.toggle('tip__btn--active')
 
-    console.log(evt.target);
+    if (evt.target.id == 'online') {
+      Elurl.style.backgroundImage = "url('../img/icon-internet.svg')";
+    }else{
+      Elurl.style.backgroundImage = "url('../img/location.svg')";
+    }
   })
 })
 
