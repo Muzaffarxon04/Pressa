@@ -79,6 +79,8 @@
 .label-time-active {
   display: flex;
 }
+
+
 .filter__subcategory,
 .filter__categore,
 .filter__date,
@@ -95,6 +97,7 @@
   padding: 15px;
   outline: none;
   border: none;
+  
 }
 .filter__input {
   &::placeholder {

@@ -24,7 +24,20 @@
   padding: 36px 46px 56px 30px;
   border-radius: 5px;
   background-color: #526eff;
-  margin-right: 30px;
+  margin-right: 20px;
+}
+
+@include breakpoint-down(1200px) {
+  .main__container {
+  margin: 0 auto;
+ padding:0 29px;
+  }
+
+  .left-aside {
+    height: 620px;
+    width: 100%;
+    margin-bottom: 30px;
+  }
 }
 
 @include breakpoint-down(900px) {
@@ -65,6 +78,7 @@
   .left-aside {
     height: 625px;
     width: 346px;
-    margin-bottom: 30px;
+    margin-bottom:0 0 30px 0;
+    padding: 20px;
   }
 }

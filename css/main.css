@@ -434,10 +434,8 @@ img {
 .container {
   width: 100%;
   max-width: 1250px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
 .header {
@@ -745,7 +743,19 @@ img {
   padding: 36px 46px 56px 30px;
   border-radius: 5px;
   background-color: #526eff;
-  margin-right: 30px;
+  margin-right: 20px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .main__container {
+    margin: 0 auto;
+    padding: 0 29px;
+  }
+  .left-aside {
+    height: 620px;
+    width: 100%;
+    margin-bottom: 30px;
+  }
 }
 
 @media only screen and (max-width: 900px) {
@@ -792,7 +802,8 @@ img {
   .left-aside {
     height: 625px;
     width: 346px;
-    margin-bottom: 30px;
+    margin-bottom: 0 0 30px 0;
+    padding: 20px;
   }
 }
 
@@ -1476,7 +1487,7 @@ option {
 .img-box__title {
   font-size: 40px;
   text-align: center;
-  line-height: 51px;
+  line-height: 151px;
   color: #17266e33;
   font-weight: 400;
   -webkit-transform: translateY(81px);
@@ -1606,6 +1617,17 @@ option {
           transform: translateX(230%);
 }
 
+@media only screen and (max-width: 1200px) {
+  .personal__info {
+    width: 99%;
+  }
+  .about__input,
+  .about__label,
+  .about__texterea {
+    width: 100%;
+  }
+}
+
 @media only screen and (max-width: 940px) {
   .personal__info {
     width: 500px;
@@ -1691,7 +1713,15 @@ option {
     padding: 36px 17px 39px 20px;
     width: 344px;
   }
-  .about__texterea,
+  .about__texterea {
+    background-color: #17266e;
+    width: 299px;
+    margin: 0;
+  }
+  .about__label {
+    margin-left: 0;
+    width: 94%;
+  }
   .about__input,
   .img-box {
     width: 299px;
@@ -2482,6 +2512,7 @@ option {
   }
   .help-left__btn, .help-right__btn {
     margin-top: 40px;
+    cursor: pointer;
   }
   .help-left__img0 {
     width: 80px;
