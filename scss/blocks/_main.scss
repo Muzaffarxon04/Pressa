@@ -73,7 +73,7 @@
 @include breakpoint-down(375px) {
   .main__container {
     flex-direction: column;
-    padding:0 8px;
+    padding:0 7px;
   }
 
   .left-aside {
