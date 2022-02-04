@@ -6,7 +6,7 @@ html {
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+  box-sizing: inherit;
 }
 
 body {
@@ -15,18 +15,15 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: 'Space Grotesk',sans-serif;
   background-color: #fff;
   overflow-x: hidden;
+  color: $color-dark-blue;
 }
-
+ 
 img {
   max-width: 100%;
   height: auto;
-}
-
-.d-block {
-  display: block;
 }
 
 .d-none {

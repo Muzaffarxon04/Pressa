@@ -14,7 +14,7 @@
         "../scss/blocks/_header.scss",
         "../scss/blocks/_nav.scss",
         "../scss/blocks/_main.scss",
-        "../scss/blocks/_filter.scss",
+        "../scss/blocks/_filter-anons.scss",
         "../scss/blocks/_personal-data.scss",
         "../scss/blocks/_help.scss",
         "../scss/blocks/_footer.scss"
