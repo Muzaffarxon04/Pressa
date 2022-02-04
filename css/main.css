@@ -749,7 +749,6 @@ img {
 @media only screen and (max-width: 1200px) {
   .main__container {
     margin: 0 auto;
-    padding: 0 29px;
   }
   .left-aside {
     height: 620px;
